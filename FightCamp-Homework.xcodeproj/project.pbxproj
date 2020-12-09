@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FCB6613257B46AD001B6C29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB6612257B46AD001B6C29 /* Package.swift */; };
+		3FCB6618257B47C1001B6C29 /* PackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB6617257B47C1001B6C29 /* PackagesViewController.swift */; };
+		3FCB661D257B684C001B6C29 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB661C257B684C001B6C29 /* PackageTableViewCell.swift */; };
+		3FCB661F257F21BF001B6C29 /* PackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB661E257F21BE001B6C29 /* PackageViewModel.swift */; };
 		C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD9779249AC04D0044B734 /* AppDelegate.swift */; };
 		C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD977B249AC04D0044B734 /* SceneDelegate.swift */; };
 		C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BD9782249AC04E0044B734 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FCB6612257B46AD001B6C29 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		3FCB6617257B47C1001B6C29 /* PackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesViewController.swift; sourceTree = "<group>"; };
+		3FCB661C257B684C001B6C29 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
+		3FCB661E257F21BE001B6C29 /* PackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewModel.swift; sourceTree = "<group>"; };
 		C1BD9776249AC04D0044B734 /* FC-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FC-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BD9779249AC04D0044B734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1BD977B249AC04D0044B734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FCB6611257B4692001B6C29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB6612257B46AD001B6C29 /* Package.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FCB6614257B4710001B6C29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB661E257F21BE001B6C29 /* PackageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3FCB6615257B4725001B6C29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB661C257B684C001B6C29 /* PackageTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FCB6616257B4732001B6C29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FCB6617257B47C1001B6C29 /* PackagesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C1BD976D249AC04D0044B734 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +104,10 @@
 		C1BD9778249AC04D0044B734 /* FightCamp-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				3FCB6616257B4732001B6C29 /* Controllers */,
+				3FCB6615257B4725001B6C29 /* View */,
+				3FCB6614257B4710001B6C29 /* ViewModel */,
+				3FCB6611257B4692001B6C29 /* Model */,
 				C1FD02AB249B23E10029487C /* Helpers */,
 				C1BD979A249AFF0C0044B734 /* Assets */,
 				C1BD9779249AC04D0044B734 /* AppDelegate.swift */,
@@ -168,10 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCB661D257B684C001B6C29 /* PackageTableViewCell.swift in Sources */,
+				3FCB6613257B46AD001B6C29 /* Package.swift in Sources */,
+				3FCB661F257F21BF001B6C29 /* PackageViewModel.swift in Sources */,
 				C1BD9791249AC0810044B734 /* Fonts.swift in Sources */,
 				C1BD978F249AC0790044B734 /* Colors.swift in Sources */,
 				C1FD02AD249B23F30029487C /* Layout.swift in Sources */,
 				C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */,
+				3FCB6618257B47C1001B6C29 /* PackagesViewController.swift in Sources */,
 				C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = .init(windowScene: windowScene)
-        window?.rootViewController = nil /* instantiate the view controller here */
+        window?.rootViewController = PackagesViewController() /* instantiate the view controller here */
         window?.makeKeyAndVisible()
     }
 
